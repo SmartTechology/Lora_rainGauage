@@ -3,6 +3,8 @@
  *
  * Created: 4-10-2017 11:45:10
  *  Author: adri
+ * Edited for rain gauge by: Luke Dixon
+ * E-mail of Luke: Luke@thedixons.nl
  */ 
 #include <string.h>
 #include "Cayenne_LPP.h"

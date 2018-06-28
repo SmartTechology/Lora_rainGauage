@@ -17,12 +17,14 @@
 /****************************************************************************************
   File:     Nexus_pinger.ino
   Author:   Adri Verhoef & Gerben den Hartog for the original Nexus Sketch
+  Edited for rain gauge by: Luke Dixon
+  E-mail of Luke: Luke@thedixons.nl
   Company:	Ideetron B.V.
   Website:  http://www.ideetron.nl/LoRa
   E-mail:   info@ideetron.nl
   Created on:         13-09-2017
   Supported Hardware: ID150119-02 Nexus board with RFM95
-
+  
   Description
 
   This firmware demonstrates a LoRaWAN pinger which send a message each minute.
@@ -55,7 +57,7 @@
 #include "mcp7940.h"
 #include "th06.h"
 #include "spi_flash.h"
-#include "nexus_demoboard.h"
+#include "sensors.h"
 //#include "Cayenne_LPP.h"
 
 
@@ -131,7 +133,6 @@ void setup(void)
   pinMode(A6,				OUTPUT);
   pinMode(A7,				OUTPUT);
   pinMode(DS2401, 		OUTPUT);
-  pinMode(MOVEMENT,		OUTPUT);
   pinMode(RTC_MFP, 		INPUT);
   pinMode(RFM_DIO0, 		INPUT);
   pinMode(RFM_DIO1, 		INPUT);
@@ -143,7 +144,7 @@ void setup(void)
 
   digitalWrite(DS2401,		LOW);
   digitalWrite(SPI_FLASH_CS,	HIGH);
-  digitalWrite(MOVEMENT,		HIGH);
+ 
 
   // Disable Pin change interrupts
   PCMSK1 = 0;//mask
@@ -189,7 +190,7 @@ void loop()
   app.Counter = 0; //app counter
   buttonPressed = false; // Make variable false
   rainCounter = 0; //make variable for counting the rain
-  demoboard_enable_button_wakeup(); // call function
+  button_wake_up(); // call function
 
   // Super loop
   while (1)
@@ -281,7 +282,6 @@ void loop()
       go_to_sleep();
     }
   }//While(1)
-}
 
 
 /*

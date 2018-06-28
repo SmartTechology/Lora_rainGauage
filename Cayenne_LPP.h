@@ -3,6 +3,8 @@
  *
  * Created: 4-10-2017 11:45:55
  *  Author: adri
+ * Edited for rain gauge by: Luke Dixon
+ * E-mail of Luke: Luke@thedixons.nl
  */ 
 
 

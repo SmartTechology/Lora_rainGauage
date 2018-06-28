@@ -17,6 +17,8 @@
 /****************************************************************************************
 * File:     Waitloop.h
 * Author:   Gerben den Hartog
+* Edited for rain gauge by: Luke Dixon
+* E-mail of Luke: Luke@thedixons.nl
 * Company: Ideetron B.V.
 * Website:  http://www.ideetron.nl/LoRa
 * E-mail:   info@ideetron.nl

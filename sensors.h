@@ -15,39 +15,38 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ******************************************************************************************/
 /****************************************************************************************
-* File:     Encrypt.h
-* Author:   Gerben den Hartog
+* File:     mcp7940.h
+* Author:   Adri Verhoef
 * Edited for rain gauge by: Luke Dixon
 * E-mail of Luke: Luke@thedixons.nl
 * Company:	Ideetron B.V.
 * Website:  http://www.ideetron.nl/LoRa
 * E-mail:   info@ideetron.nl
-* Created on:         09-02-2017
+* Created on:         22-09-2017
 * Supported Hardware: ID150119-02 Nexus board with RFM95
 ****************************************************************************************/
 
-#ifndef ENCRYPT_H
-#define ENCRYPT_H
+#ifndef SENSORS_H_
+#define SENSORS_H_
 
-	/*
-	********************************************************************************************
-	* INCLUDES
-	********************************************************************************************
-	*/
-	#include <stdint.h>
-	#include "lorawan_def.h"
+	/*********************************************************************************************
+										TYPE DEFINITION
+	*********************************************************************************************/
 
-	/*
-	*****************************************************************************************
-	* FUNCTION PROTOTYPES
-	*****************************************************************************************
-	*/
-	void 	Construct_Data_MIC	(uint8_t *data, uint8_t lenght, sLoRa_Session *Session_Data, sLoRa_Message *Message);
-	void 	Calculate_MIC		(uint8_t *data, uint8_t lenght, uint8_t *Key, sLoRa_Message *Message);
-	void 	Encrypt_Payload		(uint8_t *data, uint8_t lenght, uint8_t *Key, sLoRa_Message *Message);
-	void 	Generate_Keys		(uint8_t *Key, 	uint8_t *K1, 	uint8_t *K2);
-	void 	Shift_Left			(uint8_t *Data);
-	void 	XOR					(uint8_t *New_Data,uint8_t *Old_Data);
 
-#endif
+	/******************************************************************************************
+											DEFINES
+	******************************************************************************************/
 
+	#define BUTTON1		PIN_A2 //Make variable BUTTON 1 and link it to analog pin 2
+	#define BUTTON2		PIN_A3 //Make variable BUTTON 2 and link it to analog pin 3
+
+	
+	/******************************************************************************************
+									FUNCTION PROTOTYPES
+	******************************************************************************************/
+	double		read_supply_voltage				(void);
+	void		button_wake_up	(void);
+
+
+#endif /* MOVEMENT_H_ */
