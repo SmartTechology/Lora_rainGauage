@@ -14,6 +14,11 @@ It's a pull up system so all you need to do is to plug in of the jumper cables i
 <p> An interrupt is information that changes the normal process. A good example is typing, the OS can't predict what your going to type so every time you press a key it creates a interrupt.
 
 ### In this code 
-<p> In this code we create an interupt that when the button is pressed it interrupts the sleep protocall and takes the variable rainCounter and encreases the value by 1
+<p> In this code we create an interupt that when the button is pressed it interrupts the sleep protocall.
+
+![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/loop.PNG)
+
+### Loop
+The loop is the code that takes the button and when it's pressed increases the value and then sets the variable buttonPressed to false so it goes back to sleep.
 
 ![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/loop.PNG)
