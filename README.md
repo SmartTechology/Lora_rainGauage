@@ -1,4 +1,5 @@
 # Lora_rainGauage
+<p> Lora rainGuage is a project for a rain gauge running on the LoRa network. The criteria is that it's cheaper than the conventional rain gauge and it runs for a long time on batteries. 
 
 ## Set-up
 
