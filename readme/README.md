@@ -8,5 +8,5 @@ It's a pull up system so all you need to do is to plug in of the jumper cables i
 
 ## Code explanation
 
-<p>![interrupt](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/interrupt.PNG)</p>
+![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/interrupt.PNG)
 
