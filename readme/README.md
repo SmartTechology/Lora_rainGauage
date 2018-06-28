@@ -15,3 +15,5 @@ It's a pull up system so all you need to do is to plug in of the jumper cables i
 
 ### In this code 
 <p> In this code we create an interupt that when the button is pressed it interrupts the sleep protocall and takes the variable rainCounter and encreases the value by 1
+
+![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/loop.PNG)
