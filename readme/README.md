@@ -8,4 +8,5 @@ It's a pull up system so all you need to do is to plug in of the jumper cables i
 
 ## Code explanation
 
-<p>![interrupt](readme/iterrup.png)
+<p>![interrupt](readme/interrupt.PNG)</p>
+
