@@ -10,8 +10,8 @@ It's a pull up system so all you need to do is to plug in of the jumper cables i
 
 ![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/interrupt.PNG)
 
-### what is a interrupt
+### What is a interrupt
 <p> An interrupt is information that changes the normal process. A good example is typing, the OS can't predict what your going to type so every time you press a key it creates a interrupt.
 
-### in this code 
+### In this code 
 <p> In this code we create an interupt that when the button is pressed it interrupts the sleep protocall and takes the variable rainCounter and encreases the value by 1
