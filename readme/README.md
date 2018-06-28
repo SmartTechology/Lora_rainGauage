@@ -21,4 +21,4 @@ It's a pull up system so all you need to do is to plug in of the jumper cables i
 ### Loop
 The loop is the code that takes the button and when it's pressed increases the value and then sets the variable buttonPressed to false so it goes back to sleep.
 
-![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/loop.PNG)
+![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/rain read.PNG)
