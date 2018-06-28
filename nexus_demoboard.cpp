@@ -8,26 +8,6 @@
 #include <Arduino.h>
 #include "nexus_demoboard.h"
 
-/*
-	@brief	
-	Initializes the movement sensor on the Nexus demoboard, so it generates Pin Change Interrupts when the sensor pulls the A0 pin low.
-	As the Pin change interrupt is unidirectional there is no rising or falling edge detection. 
-	
-	@warning
-	Since the hardware pull-up on the demoboard is used to give the input pin a default state, don't use this code without the demoboard 
-	or enable an internal pull-up to prevent erratic behavior and higher power consumption without a default pin state.
-*/
-void movement_sensor_init (void)
-{
-	// Enable the pull-up like this, even tough it's already provided by the hardware, but might be useful if the nexus is removed from the demoboard to prevent erratic behaviour without a defined pin state.
-	pinMode(MOVEMENT, INPUT_PULLUP);
-	
-	// Enable the movement sensor to trigger an Pin Change Interrupt request
-	PCMSK1 |= 0x01;
-	
-	// Enable Pin Change Interrupt 1
-	PCICR |= 0x02;
-}
 
 /*
 	@brief	
@@ -103,11 +83,11 @@ double read_supply_voltage(void)
 void demoboard_enable_button_wakeup (void)
 {
 	// Enable the Pull_UPs on the buttons, so 
-	pinMode(BUTTON1, INPUT_PULLUP);
-	pinMode(BUTTON2, INPUT_PULLUP);
+	pinMode(BUTTON1, INPUT_PULLUP); //Analog pin 2 ground moisture sensor
+	pinMode(BUTTON2, INPUT); //Analog pin 3 for button
 		
 	// Enable the buttons to trigger an Pin Change Interrupt request
-	PCMSK1 |= 0b00000110; //luke
+	PCMSK1 |= 0b00000110; //allow 2 pins to interrupt
 		
 	// Enable Pin Change Interrupt 1
 	PCICR |= 0x02;

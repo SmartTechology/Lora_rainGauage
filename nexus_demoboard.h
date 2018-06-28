@@ -36,16 +36,13 @@
 											DEFINES
 	******************************************************************************************/
 
-	#define MOVEMENT	PIN_A0
-	#define BUTTON1		PIN_A2 //luke
-	#define BUTTON2		PIN_A3 //luke
-	#define LDR			PIN_A7
-	#define POT_METER	PIN_A6
+	#define BUTTON1		PIN_A2 //Make variable BUTTON 1 and link it to analog pin 2
+	#define BUTTON2		PIN_A3 //Make variable BUTTON 2 and link it to analog pin 3
+
 	
 	/******************************************************************************************
 									FUNCTION PROTOTYPES
 	******************************************************************************************/
-	void		movement_sensor_init			(void);
 	double		read_supply_voltage				(void);
 	void		demoboard_enable_button_wakeup	(void);
 
