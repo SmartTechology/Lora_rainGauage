@@ -21,4 +21,15 @@ It's a pull up system so all you need to do is to plug in of the jumper cables i
 ### Loop
 The loop is the code that takes the button and when it's pressed increases the value and then sets the variable buttonPressed to false so it goes back to sleep.
 
-![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/rain read.PNG)
+![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/rainRead.PNG)
+
+## Time to calculate
+In this piece of code we take our rainCounter value and times it by 0.15 becuase the mill collects 0,15mm per bucket. After that you times it by 10 for the TTN Network.
+
+## Sending data to the TTN
+At the end of the code to send data to TTN you need to add this piece of code "Lora.TX.Data[] and the number is the byte number. It starts a 0 and ends where you want it to end.
+<hr>
+
+# Disclamer
+<p> Most of the code is written by IDEETRON and I thank them for there hard work. All I have done is edit it to a rain gauge. So many thanks again to the guys at IDEETRON.
+<hr>
