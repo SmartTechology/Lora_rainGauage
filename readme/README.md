@@ -4,7 +4,8 @@
 
 <p>Setting it up is really easy.
 It's a pull up system so all you need to do is to plug in of the jumper cables in to one side to the ground. After that you plug another jumper in the diagonally to the other one. Plug that one in the A2 port and your done!</p>
-<p> A1 can be used for the other sensor, This one is easy to write because it doenst need to wake up the Nexus. 
+<p> A1 can be used for the other sensor, This one is easy to write because it doenst need to wake up the Nexus. </p> 
+<p>The pinout is available <a href="https://webshop.ideetron.nl/Nexus">here<a></p>
 
 ## Code explanation
 
@@ -18,7 +19,7 @@ It's a pull up system so all you need to do is to plug in of the jumper cables i
 
 ![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/loop.PNG)
 
-### Loop
+## Loop
 The loop is the code that takes the button and when it's pressed increases the value and then sets the variable buttonPressed to false so it goes back to sleep.
 
 ![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/rainRead.PNG)
@@ -31,5 +32,9 @@ At the end of the code to send data to TTN you need to add this piece of code "L
 <hr>
 
 # Disclamer
-<p> Most of the code is written by IDEETRON and I thank them for there hard work. All I have done is edit it to a rain gauge. So many thanks again to the guys at IDEETRON.
+<p> Most of the code is written by IDEETRON and I thank them for there hard work. All I have done is edit it to a rain gauge. So many thanks again to the guys at IDEETRON. 
+  
+Remember have fun <br>
+Kind Regards <br>
+Luke
 <hr>
