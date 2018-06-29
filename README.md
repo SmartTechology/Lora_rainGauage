@@ -1,5 +1,5 @@
 # Lora_rainGauage
-<p> Lora rainGuage is a project for a rain gauge running on the LoRa network. The criteria is that it's cheaper than the conventional rain gauge and it runs for a long time on batteries. 
+<p> Lora rainGuage is a project for a rain gauge running on the LoRa network. The criteria is that it's cheaper than the conventional rain gauge and it runs for a long time on batteries. With this project you use a Nexus LoRa board from IDEETRON which is available <a href="https://webshop.ideetron.nl/Nexus">here<a></p>
 
 ## Set-up
 
@@ -31,7 +31,7 @@ In this piece of code we take our rainCounter value and times it by 0.15 becuase
 ## Sending data to the TTN
 
 ![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/sendData.PNG)
-<p>At the end of the code to send data to TTN you need to add this piece of code "Lora.TX.Data[] and the number is the byte number. It starts a 0 and ends where you want it to end. Also if you send a 16 bit integer you have to split it into 2 beacuse it can only send 8 bytes per message. To do this you split it into high and low byte. </p>
+<p>At the end of your sensor code(and you need to do this per sensor) to send data to TTN you need to add this piece of code "Lora.TX.Data[] and the number is the byte number. It starts a 0 and ends where you want it to end. Also if you send a 16 bit integer you have to split it into 2 beacuse it can only send 8 bytes per message. To do this you split it into high and low byte. </p>
 <hr>
 
 # Disclamer
