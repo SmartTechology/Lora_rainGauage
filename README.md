@@ -29,6 +29,8 @@ The loop is the code that takes the button and when it's pressed increases the v
 In this piece of code we take our rainCounter value and times it by 0.15 becuase the mill collects 0,15mm per bucket. After that you times it by 10 for the TTN Network.
 
 ## Sending data to the TTN
+
+![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/sendData.PNG)
 At the end of the code to send data to TTN you need to add this piece of code "Lora.TX.Data[] and the number is the byte number. It starts a 0 and ends where you want it to end.
 <hr>
 
