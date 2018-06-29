@@ -31,7 +31,7 @@ In this piece of code we take our rainCounter value and times it by 0.15 becuase
 ## Sending data to the TTN
 
 ![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/sendData.PNG)
-At the end of the code to send data to TTN you need to add this piece of code "Lora.TX.Data[] and the number is the byte number. It starts a 0 and ends where you want it to end. Also if you send a 16 bit integer you have to split it into 2 beacuse it can only send 8 bytes per message. To do this you split it into high and low byte. 
+<p>At the end of the code to send data to TTN you need to add this piece of code "Lora.TX.Data[] and the number is the byte number. It starts a 0 and ends where you want it to end. Also if you send a 16 bit integer you have to split it into 2 beacuse it can only send 8 bytes per message. To do this you split it into high and low byte. </p>
 <hr>
 
 # Disclamer
