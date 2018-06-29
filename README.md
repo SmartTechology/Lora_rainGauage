@@ -5,7 +5,7 @@
 
 <p>Setting it up is really easy.
 It's a pull up system so all you need to do is to plug in of the jumper cables in to one side to the ground. After that you plug another jumper in the diagonally to the other one. Plug that one in the A2 port and your done!</p>
-<p> A1 can be used for the other sensor, This one is easy to write because it doenst need to wake up the Nexus. </p> 
+<p> A3 can be used for the other sensor, This one is easy to write because it doenst need to wake up the Nexus. </p> 
 <p>The pinout is available <a href="https://webshop.ideetron.nl/Nexus">here<a></p>
 
 ## Code explanation
@@ -31,7 +31,7 @@ In this piece of code we take our rainCounter value and times it by 0.15 becuase
 ## Sending data to the TTN
 
 ![](https://github.com/SmartTechology/Lora_rainGuage/blob/master/readme/sendData.PNG)
-At the end of the code to send data to TTN you need to add this piece of code "Lora.TX.Data[] and the number is the byte number. It starts a 0 and ends where you want it to end.
+At the end of the code to send data to TTN you need to add this piece of code "Lora.TX.Data[] and the number is the byte number. It starts a 0 and ends where you want it to end. Also if you send a 16 bit integer you have to split it into 2 beacuse it can only send 8 bytes per message. To do this you split it into high and low byte. 
 <hr>
 
 # Disclamer
